@@ -5,7 +5,7 @@ namespace WebApi.Jwt.Controllers
 {
     public class ValueController : ApiController
     {
-        [JwtAuthentication]
+        [JwtAuthentication]   
         public string Get()
         {
             return "value";

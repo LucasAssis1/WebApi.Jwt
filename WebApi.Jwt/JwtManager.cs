@@ -27,7 +27,7 @@ namespace WebApi.Jwt
                             new Claim(ClaimTypes.Name, username)
                         }),
 
-                Expires = now.AddMinutes(Convert.ToInt32(expireMinutes)),
+                //Expires = now.AddMinutes(Convert.ToInt32(expireMinutes)),
                 
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(symmetricKey), SecurityAlgorithms.HmacSha256Signature)
             };
